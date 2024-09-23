@@ -1,0 +1,38 @@
+/* src/components/ProfileCard.css */
+.profile-card {
+    display: flex; /* Use flexbox for horizontal layout */
+    background-color: rgb(99, 95, 95); /* White background */
+    border: 1px solid #323131; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Space inside the card */
+    max-width: 1000px; /* Increase max width */
+    margin: 20px auto; /* Center card horizontally and add vertical space */
+  }
+  
+  .profile-image {
+    width: 35%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+     margin-right: 20px; /* Space between image and text */
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text vertically in the card */
+  }
+
+  .profile-info h2 {
+    font-size: 3.0em;
+    color: rgba(255, 255, 255, 0.882);
+    margin: 5px 0;
+  }
+
+  .profile-info h3 {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.882);
+    font-weight: normal;
+    margin: 0;
+  }
+

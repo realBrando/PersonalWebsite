@@ -1,0 +1,60 @@
+/* src/components/Layout.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #464444;
+  }
+  
+  .top-bar {
+    background-color: rgb(29, 29, 32); /* Dark background color */
+    position: fixed; /* Fixed position at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0;
+    z-index: 1000; /* Stay on top of other content */
+    padding: 1em 0;
+  }
+  
+  .nav-list {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    gap: 1.5em; /* Space between the links */
+  }
+  
+  .nav-list li {
+    display: inline; /* Display list items inline */
+  }
+  
+  .nav-list a {
+     color: rgba(255, 255, 255, 0.882); /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em;
+  }
+  
+  .nav-list a:hover {
+    color: rgb(99, 95, 95); /* Change color on hover */
+  }
+  
+  .main-content {
+    padding-top: 60px; /* Add space to account for fixed top bar */
+    background-color: #464444;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #504e4e; /* Optional: Background color for the footer */
+    text-align: center;
+    padding: 1em 0;
+    }
+
+  .profile-pic {
+    max-width: 30%; /* Ensure it fits the container */
+    height: auto; /* Maintain aspect ratio */
+  }
