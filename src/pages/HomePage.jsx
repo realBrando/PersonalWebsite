@@ -5,7 +5,12 @@ import ProfileCard from '../components/ProfileCard';
 const Home = () => {
   return (
     <div>
+      <div>
         <ProfileCard/> {ProfileCard}
+        </div>
+        <div>
+          <h1>Overview</h1>
+        </div>
     </div>
   );
 };
