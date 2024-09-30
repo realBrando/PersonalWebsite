@@ -44,10 +44,11 @@ body, html {
     padding-top: 60px; /* Add space to account for fixed top bar */
     background-color: #161840;
     color: #FFFFFF; /* Charcoal text color for readability */
+    padding-bottom: 90px;
   }
   
   .footer {
-    position: bottom;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -55,6 +56,7 @@ body, html {
     text-align: center;
     padding: 1em 0;
     color: #FFFFFF;
+    margin-top: 10px;
     }
 
   .profile-pic {

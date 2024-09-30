@@ -29,25 +29,27 @@ const Contact = () => {
       };
 
   return (
-    <section>
-    <div>
-        <h2>Contact Me via Email</h2>
-        <form ref={form} onSubmit={sendEmail}>
-            <input type = "text"
-            placeholder= "Name"
-            name = 'user_name' required/>
-             <input type = "email"
-            placeholder= "Email"
-            name = 'user_email' required/>
-             <textarea name = "content"
-            cols= "30" rows = "10"
-            placeholder='Message' required></textarea>
-            <button type='submit'
-            className='SendButton'>Send Message</button>
-        </form>
-        {confirmationMessage && <p className="confirmation">{confirmationMessage}</p>} {/* Show confirmation message */}
+    <div className='contact-container'>
+      <section>
+      <div> 
+          <h2>Contact Me via Email</h2>
+          <form ref={form} onSubmit={sendEmail}>
+              <input type = "text"
+              placeholder= "Name"
+              name = 'user_name' required/>
+              <input type = "email"
+              placeholder= "Email"
+              name = 'user_email' required/>
+              <textarea name = "content"
+              cols= "30" rows = "10"
+              placeholder='Message' required></textarea>
+              <button type='submit'
+              className='SendButton'>Send Message</button>
+          </form>
+          {confirmationMessage && <p className="confirmation">{confirmationMessage}</p>} {/* Show confirmation message */}
+      </div>
+      </section>
     </div>
-    </section>
   );
 };
 
