@@ -3,11 +3,12 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #464444;
+    background-color: #161840;
+    height: 100%;
   }
   
   .top-bar {
-    background-color: rgb(29, 29, 32); /* Dark background color */
+    background-color: #23253e; /* Dark background color */
     position: fixed; /* Fixed position at the top */
     width: 100%; /* Full width */
     top: 0; /* Stick to the top */
@@ -30,7 +31,7 @@ body, html {
   }
   
   .nav-list a {
-     color: rgba(255, 255, 255, 0.882); /* White text color */
+     color: #FFFFFF; /* White text color */
     text-decoration: none; /* Remove underline */
     font-size: 1.2em;
   }
@@ -41,20 +42,23 @@ body, html {
   
   .main-content {
     padding-top: 60px; /* Add space to account for fixed top bar */
-    background-color: #464444;
+    background-color: #161840;
+    color: #FFFFFF; /* Charcoal text color for readability */
   }
   
   .footer {
-    position: absolute;
+    position: bottom;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #504e4e; /* Optional: Background color for the footer */
+    background-color: #23253e; /* Optional: Background color for the footer */
     text-align: center;
     padding: 1em 0;
+    color: #FFFFFF;
     }
 
   .profile-pic {
     max-width: 30%; /* Ensure it fits the container */
     height: auto; /* Maintain aspect ratio */
+    border: 2px solid #4DB6AC; /* Teal border for a subtle accent */
   }

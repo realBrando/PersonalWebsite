@@ -1,10 +1,12 @@
 import React from 'react';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import "../components/Contact.css"
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef()
+    const [confirmationMessage, setConfirmationMessage] = useState(''); // State to store the confirmation message
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -16,9 +18,11 @@ const Contact = () => {
           .then(
             () => {
               console.log('SUCCESS!');
+              setConfirmationMessage('Email sent successfully!');
             },
             (error) => {
               console.log('FAILED...', error.text);
+              setConfirmationMessage('Failed to send Email, please try again');
             },
           );
           e.target.reset()
@@ -27,7 +31,7 @@ const Contact = () => {
   return (
     <section>
     <div>
-        <h2>Contact Me</h2>
+        <h2>Contact Me via Email</h2>
         <form ref={form} onSubmit={sendEmail}>
             <input type = "text"
             placeholder= "Name"
@@ -37,10 +41,11 @@ const Contact = () => {
             name = 'user_email' required/>
              <textarea name = "content"
             cols= "30" rows = "10"
-            placeholder='Message'></textarea>
+            placeholder='Message' required></textarea>
             <button type='submit'
             className='SendButton'>Send Message</button>
         </form>
+        {confirmationMessage && <p className="confirmation">{confirmationMessage}</p>} {/* Show confirmation message */}
     </div>
     </section>
   );
