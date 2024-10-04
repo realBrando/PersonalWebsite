@@ -1,5 +1,5 @@
 .contact-container {
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   background-color: #23253e;
@@ -8,21 +8,58 @@
   margin-top: 25px;
 }
 
+.linkedin-info {
+  max-width: 1100px; /* Same max width as the profile card */
+  margin: 40px auto; /* Center horizontally and add vertical space */
+  padding: 20px; /* Add padding around the introduction section */
+  background-color: #D9EAF2; /* Optional: match or complement the profile card background */
+  border-radius: 8px; /* Optional: rounded corners for consistency */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.LinkedInButton {
+  background-color: #0077b5; /* LinkedIn's brand color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.LinkedInButton:hover {
+  background-color: #005582; /* Darker LinkedIn color on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.LinkedInButton:active {
+  background-color: #003f5a; /* Even darker color when clicked */
+  transform: scale(0.98); /* Slight button press effect */
+}
+
 section {
     padding: 20px;
     background-color: #D9EAF2;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   h2 {
-    text-align: center;
+    text-align: left;
     font-family: 'Arial', sans-serif;
     color: #333333;
   }
   
+  h3 {
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+  }
   form {
     display: flex;
     flex-direction: column;

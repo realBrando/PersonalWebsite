@@ -30,9 +30,16 @@ const Contact = () => {
 
   return (
     <div className='contact-container'>
+      <h1>Contact</h1>
+      <div className='linkedin-info'>
+        <h3>Check out my LinkedIn page!</h3>
+        <a href="https://www.linkedin.com/in/andrew-brandon-43b4561b6" target="_blank" rel='noopener noreferrer'>
+        <button className='LinkedInButton'>LinkedIn</button>
+        </a>
+      </div>
       <section>
       <div> 
-          <h2>Contact Me via Email</h2>
+          <h2>Contact Me via Email!</h2>
           <form ref={form} onSubmit={sendEmail}>
               <input type = "text"
               placeholder= "Name"

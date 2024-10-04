@@ -5,7 +5,7 @@ import '../components/HomePage.css';
 
 const Home = () => {
   return (
-    <div>
+    <div className='info-container'>
       <div>
         <ProfileCard/> {ProfileCard}
         </div>
