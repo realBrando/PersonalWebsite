@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../components/About.css';
+import purduePic from '../images/purduelogo3.png'
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('education'); // Default to 'education' tab
@@ -9,16 +10,23 @@ const About = () => {
       case 'education':
         return (
           <div className="tab-content">
-            <h2>Education</h2>
-            <p>Bachelor of Science in Computer Science, Purdue University, 2024</p>
+            <div className='tab-content-text'>
+            <h2>BS in Computer Science - Purdue University</h2>
+            <p>- Cumulative GPA: 3.40; Computer Science Major GPA: 3.47</p>
+            <p>- Specialization in Software Engineering, Minor in Mangement</p>
+            <p>- Relevant Courses and Languages:</p>
+            </div>
+            <img src= {purduePic} className='purduePic'/>
             {/* Add more details about education here */}
           </div>
         );
       case 'experience':
         return (
           <div className="tab-content">
+            <div className='tab-content-text'>
             <h2>Work Experience</h2>
-            <p>Software Developer at Crowe, Technology, Business, and Transformation Consulting</p>
+            <p>Software Developer at Crowe, Technology, Business, and Transformation Consulting</p> 
+            </div>
             {/* Add more details about work experience here */}
           </div>
         );

@@ -49,11 +49,34 @@
   }
   
   .tab-content {
-    color: #333;
+    display: flex; /* Align content and image side by side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #23253e;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    color: #FFFFFF;
+  }
+
+  .tab-content-text{
+    flex: 1; /* The text will take up the remaining space */
+    margin-right: 20px; /* Space between text and the image */
+  }
+
+  .purduePic {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
   
   .tab-content h2 {
     margin-bottom: 10px;
+    color: #FFFFFF
   }
   
   .tab-content p {
