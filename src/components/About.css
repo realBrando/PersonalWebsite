@@ -72,6 +72,7 @@
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 10px;
   }
 
   .GullLakePic {
@@ -79,6 +80,11 @@
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: to center the images horizontally */
   }
   
   .tab-content h2 {
