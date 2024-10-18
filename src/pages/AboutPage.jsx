@@ -5,6 +5,7 @@ import crowePic from '../images/Crowe.jpg'
 import gullLake from '../images/GullLake.jpg'
 import factsream from '../images/Factsream.png'
 import sportify from '../images/Sportify.png'
+import byx from '../images/purduebyx.png'
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('education'); // Default to 'education' tab
@@ -26,7 +27,7 @@ const About = () => {
             C, C++, Java, Python, SQL, Swift, JavaScript
             </p>
             <p>- Tools & Technologies : <br></br>
-            React, Node.js, MongoDB, Neo4j, Firebase, XINU, Linux, Shell Scripting, Git
+            React, Node.js, MongoDB, Neo4j, Firebase, XINU, Linux, Shell Scripting, Git, Flask, SQLAlchemy
             </p>
             </div>
             <img src= {purduePic} className='Pic'/>
@@ -72,11 +73,42 @@ const About = () => {
         );
         case 'leadership':
           return (
-            <div className="tab-content">
-              <div className='tab-content-text'>
+            <div>
+              <div className="tab-content">
+                <div className='tab-content-text'>
+                  <h2>President</h2>
+                  <p>- President of the Alpha Chi Chapter of Beta Upsilon Chi Fraternity (2023)</p>
+                  <p>- Led team of 7 officers and chapter of 73 members</p>
+                  <p>- Set and carried out vision of internal brotherhood and external community involvement</p>
+                  <p>- Led weekly chapter meetings, officer meetings and meeting with  national liaison </p>
+                  <p>- Apart of Officer team who were finalists for BYX Chapter of the Year and Leadership Awards</p>
+                </div>
+                <img src= {byx} className='Pic'/>
+                {/* Add more details about education here */}
               </div>
-              <img src= {purduePic} className='Pic'/>
-              {/* Add more details about education here */}
+              <div className="tab-content">
+                <div className='tab-content-text'>
+                  <h2>Pledge Captain</h2>
+                  <p>- Pledge Captain of the Alpha Chi Chapter of Beta Upsilon Chi Fraternity (2022)</p>
+                  <p>- Served on team of 6 fellow officers</p>
+                  <p>- Led and Organized pledgeship program for 25 new members</p>
+                  <p>- Crafted program emphasizing spiritual growth, professional development, internal brotherhood and integration into the fraternity</p>
+                  <p>- Apart of Officer team who were recipients of Purdue's IFC Chapter of the Year</p>
+                </div>
+                <img src= {byx} className='Pic'/>
+                {/* Add more details about education here */}
+              </div>
+              <div className="tab-content">
+                <div className='tab-content-text'>
+                  <h2>Director of Recruitment</h2>
+                  <p>- Director of Recruitment for the Alpha Chi Chapter of Beta Upsilon Chi Fraternity (2021)</p>
+                  <p>- Organized recruitment of over 100 potential new members</p>
+                  <p>- Planned and carried out interview day consisting of over 40 interviews</p>
+                  <p>- Extended bids and welcomed 19 new members into Purdue BYX</p>
+                </div>
+                <img src= {byx} className='Pic'/>
+                {/* Add more details about education here */}
+              </div>
             </div>
           );
       case 'skills':
@@ -105,6 +137,7 @@ const About = () => {
               <h2>Python</h2>
               <p>- Utilized in multiple ways through Purdue Career, namely Software Testing</p>
               <p>- Software Testing Projects: Blackbox testing, Graybox fuzzing</p>
+              <p>- Developed a Website with a SQL backend leveraging python and flask</p>
               </div>
               <img src= {purduePic} className='Pic'/>
             </div>
@@ -113,7 +146,7 @@ const About = () => {
               <h2>JavaScript</h2>
               <p>- Utilized as part of Senior Software Engineering Project at Purdue, as well as this site!</p>
               <p>- Developed Factstream News, a news Aggregator emphasizing quality journalism and diverse perspectives</p>
-              <p>- See projects tab for more info on Factstream</p>
+              <p>- See the projects page for more info on Factstream</p>
               </div>
               <img src= {factsream} className='Pic'/>
             </div>
@@ -121,8 +154,9 @@ const About = () => {
               <div className='tab-content-text'>
               <h2>SQL</h2>
               <p>- Utilized in both Academic Career at Purdue & Professional Career at Crowe</p>
-              <p>- Purdue: Utilzed SQL in Information Systems course, culminating in personal db website</p>
+              <p>- Purdue: Utilzed SQL in Information Systems course, culminating in personal db website OrgChart</p>
               <p>- Crowe: Data transformation work as part of the Integrated Manufacturing Analytics (IMA) Team</p>
+              <p>- See the projects page for more information on OrgChart</p>
               </div>
               <div className="image-container">
                 <img src= {purduePic} className='Pic'/>
@@ -134,7 +168,7 @@ const About = () => {
               <h2>Swift</h2>
               <p>- Utilized in Software Engineering 1 Course at Purdue</p>
               <p>- Developed Sportify, an iOS social media app for organizing recreational sports</p>
-              <p>- See the projects tab for more information on Sportify</p>
+              <p>- See the projects page for more information on Sportify</p>
               </div>
               <img src= {sportify} className='Pic'/>
             </div>

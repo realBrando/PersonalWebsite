@@ -1,0 +1,55 @@
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #23253e;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+  }
+
+  .content-area {
+    height: 400px; /* Set a fixed height for scrollable content */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    background-color: #D9EAF2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .tab-content {
+    display: flex; /* Align content and image side by side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #23253e;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    color: #FFFFFF;
+  }
+
+  .tab-content h2 {
+    margin-bottom: 10px;
+    color: #FFFFFF
+  }
+  
+  .tab-content p {
+    line-height: 1.6;
+  }
+
+  .tab-content-text {
+    flex: 1; /* The text will take up the remaining space */
+    margin-right: 20px; /* Space between text and the image */
+  }
+
+  .Pic {
+    width: 200px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 10px;
+  }
+  
