@@ -11,10 +11,11 @@
   }
   
   .profile-image {
-    width: 35%; /* Responsive image */
+    max-width: 35%; /* Responsive image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: Rounded corners for the image */
      margin-right: 20px; /* Space between image and text */
+     object-fit: cover;
   }
 
   .profile-info {
