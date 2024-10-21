@@ -122,8 +122,8 @@
   }
 
   .Pic, .GullLakePic {
-      width: 100%; /* Let the image take full width */
-      max-width: 400px; /* Restrict max size */
+      width: 80%; /* Let the image take full width */
+      max-width: 300px; /* Restrict max size */
       height: auto;
   }
 }
@@ -141,6 +141,11 @@
   .content-area {
       height: auto; /* Remove fixed height for better scrolling */
       padding: 15px;
+  }
+  .Pic, .GullLakePic {
+    width: 70%; /* Make images a little smaller for phones */
+    max-width: 250px; /* Further restrict max width */
+    height: auto;
   }
 }
   

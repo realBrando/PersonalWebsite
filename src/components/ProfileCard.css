@@ -44,3 +44,57 @@
     margin: 3px 0;
   }
 
+  /* Media Queries */
+
+/* Tablet and smaller (max-width: 768px) */
+@media (max-width: 768px) {
+  .profile-card {
+      flex-direction: column; /* Stack image and text vertically */
+      padding: 15px;
+  }
+
+  .profile-image {
+      max-width: 60%; /* Make the image take up more space */
+      margin: 0 auto 20px; /* Center image and add bottom margin */
+  }
+
+  .profile-info h2 {
+      font-size: 2.0em; /* Smaller font size for tablet */
+      text-align: center; /* Center text */
+  }
+
+  .profile-info h3 {
+      font-size: 1.2em; /* Smaller font size for tablet */
+      text-align: center; /* Center text */
+  }
+
+  .profile-info h4 {
+      font-size: 0.9em; /* Slightly smaller text */
+      text-align: center; /* Center text */
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .profile-card {
+      padding: 10px;
+      max-width: 100%; /* Full width on small screens */
+  }
+
+  .profile-image {
+      max-width: 50%; /* Smaller image for mobile */
+  }
+
+  .profile-info h2 {
+      font-size: 1.8em; /* Even smaller font size for mobile */
+  }
+
+  .profile-info h3 {
+      font-size: 1.1em; /* Adjust text size for mobile */
+  }
+
+  .profile-info h4 {
+      font-size: 0.8em; /* Smaller font size */
+  }
+}
+
