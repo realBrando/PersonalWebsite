@@ -3,6 +3,7 @@ import '../components/Projects.css';
 import factsream from '../images/Factsream.png'
 import sportify from '../images/Sportify.png'
 import sqlite from '../images/sqlite.png'
+import { Analytics } from "@vercel/analytics/react"
 
 const Projects = () => {
   return (

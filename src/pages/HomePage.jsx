@@ -2,6 +2,7 @@ import React from 'react';
 import profilePic from "../images/24PurdueBGrad82.jpg";
 import ProfileCard from '../components/ProfileCard';
 import '../components/HomePage.css';
+import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
             group. Feel free to explore the "About" tab for more details on my education, and 
             prior work experience, as well as the "Projects" tab for past projects. </h2>
         </div>
+        <Analytics />
     </div>
   );
 };

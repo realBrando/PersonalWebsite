@@ -6,6 +6,7 @@ import gullLake from '../images/GullLake.jpg'
 import factsream from '../images/Factsream.png'
 import sportify from '../images/Sportify.png'
 import byx from '../images/purduebyx.png'
+import { Analytics } from "@vercel/analytics/react"
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('education'); // Default to 'education' tab
