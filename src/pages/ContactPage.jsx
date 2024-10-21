@@ -2,7 +2,6 @@ import React from 'react';
 import { useRef, useState } from 'react';
 import "../components/Contact.css"
 import emailjs from '@emailjs/browser';
-import { Analytics } from "@vercel/analytics/react"
 
 const Contact = () => {
     const form = useRef()
