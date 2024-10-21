@@ -53,4 +53,38 @@
     margin-bottom: 10px;
     max-width: 100%;
   }
-  
+  /* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+      padding: 15px;
+      max-width: 100%;
+  }
+
+  .tab-content {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center; /* Center items */
+  }
+
+  .tab-content-text {
+      margin-right: 0;
+      margin-bottom: 20px; /* Add space between text and image */
+      text-align: center; /* Center the text */
+  }
+
+  .Pic {
+      width: 100%; /* Let the image take full width */
+      max-width: 400px; /* Restrict max size */
+      height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-content h2 {
+      font-size: 1.2em;
+  }
+
+  .content-area {
+      height: auto; /* Remove fixed height */
+      padding: 15px;
+  }
+}
